@@ -17,6 +17,14 @@ npm run preview
 
 The build is a static website in `dist/`. Never edit `dist/` directly.
 
+## Vercel deployment
+
+The full application must be pushed to GitHub, not only this README. `vercel.json` sets the framework to Vite, runs `npm ci` and `npm run build`, and serves `dist/`.
+
+In Vercel, connect `Thrive-nexos/faith`, use `main` as the production branch and leave Root Directory at the repository root (`./`). The source files and `package.json` are at that root. A push should create a deployment when the Git integration is enabled. If needed, deploy the newest commit from Vercel; redeploying the old README-only commit will still produce a 404. Inspect build logs and confirm the deployment is Ready.
+
+The portfolio includes the supplied CV, portrait and original certificate photographs in `public/`; these are delivered as website assets. Local reviews, PDF working output, Sites metadata, dependencies and secrets are excluded from Git. Replace the old Sites URLs in SEO metadata with your confirmed Vercel domain once available.
+
 ## Content integrity
 
 Sources: the supplied CV, the owner's confirmation of a 2024 stockkeeping role at Olorumlami in Ogbomoso, Oyo State, and three supplied certificate photographs. Stockkeeping duties beyond the role itself remain unspecified; no inventory metrics or software proficiency are invented. NCAM dates are unspecified. Judif employment remains current “per CV” and needs owner confirmation when the CV is updated. The downloadable CV has been revised to include the confirmed storekeeping role, updated degree wording and supplied service credentials.

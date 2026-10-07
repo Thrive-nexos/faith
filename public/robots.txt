@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://oluwatobi-faith-portfolio.astute-plum-5148.chatgpt.site/sitemap.xml
