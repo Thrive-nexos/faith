@@ -1,8 +1,6 @@
 export type Project = {id:string;title:string;category:string;company:string;period:string;image:string;alt:string;summary:string;overview:string;problem:string;solution:string;responsibilities:string[];skills:string[];results:string;lessons:string;placeholder:boolean};
 export type Credential = {id:string;name:string;issuer:string;date:string;image:string;credentialId?:string;verificationUrl?:string;placeholder:boolean;crop:'degree'|'nysc'|'road-safety';description:string};
-
-// CV + user-confirmed Olorumlami role (2024) + original supplied certificates.
-// Do not infer unconfirmed stockkeeping duties, dates or performance figures.
+ 
 export const portfolio = {
   person: {name:'Ojo Oluwatobi Faith',shortName:'Oluwatobi Faith',title:'Manager · Storekeeper · Operations Professional',email:'tobet4rate@gmail.com',phones:['+2348150411425','+2349026655823'],country:'Nigeria',location:null as string|null,portrait:'/images/profile/profile-studio.webp',portraitOriginal:'/images/profile/profile-main.jpg',resume:'/OJO_OLUWATOBI_FAITH_CV.pdf',statement:'Management experience. A practical understanding of stockkeeping. A steady approach to people, records and day-to-day operations.'},
   navigation:[{label:'About',href:'#about'},{label:'Expertise',href:'#expertise'},{label:'Experience',href:'#experience'},{label:'Credentials',href:'#credentials'},{label:'Journey',href:'#journey'}],
